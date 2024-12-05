@@ -18,7 +18,7 @@ A simple Node.js API for managing products in an e-commerce platform. This proje
 
 ## **Folder Structure**
 
-\`\`\`
+```
 project/
 ├── src/
 │   ├── routes/
@@ -32,7 +32,7 @@ project/
 ├── .env
 ├── package.json
 └── server.js
-\`\`\`
+```
 
 ---
 
@@ -50,27 +50,27 @@ Ensure you have the following installed:
 ### **Installation**
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/ecommerce-product-api.git
    cd ecommerce-product-api
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Setup environment variables**
    - Create a `.env` file in the root directory and add:
-     \`\`\`env
+     ```env
      MONGO_URI=mongodb://localhost:27017/ecommerce
      PORT=3000
      JWT_SECRET=your-secret-key
-     \`\`\`
+     ```
 
 4. **Start the server**
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
-5. **API will be running at** \`http://localhost:8080\`
+5. **API will be running at** `http://localhost:8080`
