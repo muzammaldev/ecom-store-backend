@@ -1,14 +1,10 @@
-#!/bin/bash
 
 # E-Commerce Product API README.md
-
-cat << 'EOF' > README.md
 
 # **E-Commerce Product API**
 
 A simple Node.js API for managing products in an e-commerce platform. This project uses **Express**, **MongoDB**, and **Mongoose**.
 
----
 
 ## **Features**
 
@@ -19,7 +15,6 @@ A simple Node.js API for managing products in an e-commerce platform. This proje
 - JWT-based authentication and CORS support
 - Environment-based configuration
 
----
 
 ## **Folder Structure**
 
@@ -78,114 +73,4 @@ Ensure you have the following installed:
    npm start
    \`\`\`
 
-5. **API will be running at** \`http://localhost:3000\`
-
----
-
-## **API Endpoints**
-
-### **Products**
-
-| Endpoint            | Method | Description         | Body (JSON)                                                                                                   |
-|---------------------|--------|---------------------|--------------------------------------------------------------------------------------------------------------|
-| `/api/products`     | GET    | Get all products    | None                                                                                                         |
-| `/api/products/:id` | GET    | Get product by ID   | None                                                                                                         |
-| `/api/products`     | POST   | Create a new product| \`{ "name": "Product", "description": "Description", "price": 100, "category": "Category", "stock": 10 }\`     |
-
----
-
-## **Example Requests**
-
-### **Create a Product**
-
-- **Request**:
-  \`\`\`bash
-  POST /api/products
-  \`\`\`
-  \`\`\`json
-  {
-    "name": "Laptop",
-    "description": "A high-performance laptop",
-    "price": 1200,
-    "category": "Electronics",
-    "stock": 15
-  }
-  \`\`\`
-
-- **Response**:
-  \`\`\`json
-  {
-    "message": "Product created successfully",
-    "product": {
-      "_id": "64abe123...",
-      "name": "Laptop",
-      "description": "A high-performance laptop",
-      "price": 1200,
-      "category": "Electronics",
-      "stock": 15,
-      "createdAt": "2023-12-01T12:00:00.000Z",
-      "updatedAt": "2023-12-01T12:00:00.000Z"
-    }
-  }
-  \`\`\`
-
-### **Get All Products**
-
-- **Request**:
-  \`\`\`bash
-  GET /api/products
-  \`\`\`
-
-- **Response**:
-  \`\`\`json
-  [
-    {
-      "_id": "64abe123...",
-      "name": "Laptop",
-      "description": "A high-performance laptop",
-      "price": 1200,
-      "category": "Electronics",
-      "stock": 15,
-      "createdAt": "2023-12-01T12:00:00.000Z",
-      "updatedAt": "2023-12-01T12:00:00.000Z"
-    }
-  ]
-  \`\`\`
-
----
-
-## **Technologies Used**
-
-- **Backend**: Node.js, Express
-- **Database**: MongoDB, Mongoose
-- **Authentication**: JSON Web Tokens (JWT)
-- **Other Tools**: dotenv, cors
-
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **Contributing**
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository
-2. Create a new branch (\`git checkout -b feature/your-feature\`)
-3. Commit your changes (\`git commit -m 'Add some feature'\`)
-4. Push to the branch (\`git push origin feature/your-feature\`)
-5. Open a Pull Request
-
----
-
-## **Contact**
-
-- **Author**: [Muhammad Muzammal](https://github.com/your-username)
-- **Email**: your-email@example.com
-
-EOF
-
-echo "README.md file created successfully!"
+5. **API will be running at** \`http://localhost:8080\`
